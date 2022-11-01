@@ -5,9 +5,8 @@ avatar_filename: 照片.jpg
 bio: "I am applying for Fall 2023 PhD programs. My research interests are data
   center application optimizations, micro-architechture "
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Microarchitectual Optimization
+  - Data Center Optimization
 social:
   - icon: envelope
     icon_pack: fas
@@ -28,19 +27,16 @@ social:
     icon_pack: fab
     link: https://www.linkedin.com/
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: University of Michigan
+    url: https://www.umich.edu/
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: B.S. Electical and Computer Engineering
+      institution: University of Michigan
+      year: 2023
+    - course: B.S. Electical and Computer Engineering
+      institution: Shanghai Jiao Tong University
+      year: 2021
 superuser: true
 last_name: Bighetti
 highlight_name: true
