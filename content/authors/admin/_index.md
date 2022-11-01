@@ -40,4 +40,4 @@ My research interests are data center application optimizations and microarchite
 
 I am applying for Fall 2023 Ph.D. programs, and I expect to graduate in Summer 2023. Please consider me if you are recruiting. 1234
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/KanZhuResume\[1642].pdf" "newtab" >}}resumé{{< /staticref >}}.
