@@ -40,5 +40,5 @@ I lead the Enabling Architectural Simulations and Optimizations of Production We
 I cooperate with professor Baris Kasikci, Akshitha Sriraman, Heiner Litz, and industrial folks Derek Bruening, Abhinav Sharma, Sangeeta Bhattacharya, and Victor Lee. 
 I present my work on MICRO 2022 and received ACM Student Research Competition 1st Place Award.
 I am applying for Fall 2023 Ph.D. programs. Please consider me if you are recruiting. 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/KanZhuResume\[1642].pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/KanZhuResume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 b" >}}resumé{{< /staticref >}}.
