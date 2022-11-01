@@ -11,15 +11,6 @@ social:
   - icon: envelope
     icon_pack: fas
     link: /#contact
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-    label: Follow me on Twitter
-    display:
-      header: true
-  - icon: graduation-cap
-    icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
   - icon: github
     icon_pack: fab
     link: https://github.com/gcushen
@@ -49,4 +40,4 @@ My research interests are data center application optimizations and microarchite
 
 I am applying for Fall 2023 Ph.D. programs, and I expect to graduate in Summer 2023. Please consider me if you are recruiting.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "u" "newtab" >}}resumé{{< /staticref >}}.
