@@ -2,8 +2,8 @@
 title: Kan Zhu 朱侃
 role: Undergraduate (Computer Engineering)
 avatar_filename: avatar.jpg
-bio: "I am applying for Fall 2023 PhD programs. My research interests are data
-  center application optimizations, micro-architechture "
+bio: I am applying for Fall 2023 PhD programs. My research interests are data
+  center application optimizations, microarchitechture optimizations
 interests:
   - Microarchitectual Optimization
   - Data Center Optimization
@@ -43,9 +43,10 @@ highlight_name: true
 first_name: Alice
 email: kanzhu@umich.edu
 ---
+I﻿ am a senior undergraduate student majoring in Computer Engineering at the University of Michigan.
 
-Alice Bighetti is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+My research interests are data center application optimizations and microarchitecture optimizations. I am also interested in Accelerators and Operating Systems.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am applying for Fall 2023 Ph.D. programs, and I expect to graduate in Summer 2023. Please consider me if you are recruiting.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "" "newtab" >}}resumé{{< /staticref >}}.
