@@ -25,8 +25,8 @@ content:
       captcha: false
 
   # Contact details (edit or remove options as required)
-  email: test@example.org
-  phone: 888 888 88 88
+  email: kanzhu@umich.edu
+  phone: 734 596 2015
   address:
     street: 450 Serra Mall
     city: Stanford
