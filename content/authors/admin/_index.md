@@ -3,9 +3,9 @@ title: Kan Zhu 朱侃
 role: Undergraduate (Computer Engineering)
 avatar_filename: avatar.jpg
 bio: I am applying for Fall 2023 PhD programs. My research interests are data
-  center application optimizations, microarchitechture optimizations
+  center application optimizations, micro-architechture optimizations
 interests:
-  - Microarchitectual Optimization
+  - Micro-architectual Optimization
   - Data Center Optimization
 social:
   - icon: envelope
