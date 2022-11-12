@@ -29,10 +29,7 @@ publication_types: ['1']
 publication: In Submission to *ASPLOS*
 publication_short: In Submission to *ASPLOS*
 
-abstract: Modern web services are pervasive, running across hundreds
-of thousands of servers in data centers. Hence, even
-a small improvement in server efficiency can achieve significant
-financial and environmental benefits. 
+abstract: Modern web services are pervasive, running across hundreds of thousands of servers in data centers. Hence, even a small improvement in server efficiency can achieve significant financial and environmental benefits. 
 
 # Summary. An optional shortened abstract.
 summary: |2-
