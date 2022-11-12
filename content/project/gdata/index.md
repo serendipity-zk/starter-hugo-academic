@@ -1,9 +1,9 @@
 ---
 slides: example
 url_pdf: ""
-summary: An example of using the in-built project page.
+summary: We proposed Ally, a novel simulation and characterization infrastructure that enables studying web services’ micro-architecture behaviors using Google applications, and identify the main bottleneck as thread oversubscription and low prefetch bandwidth usage.
 url_video: ""
-date: 2022-11-01T22:34:07.489Z
+date: 2022-10-20
 external_link: ""
 url_slides: ""
 title: Enabling Architectural Simulations and Optimizations of Production Web Services

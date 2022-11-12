@@ -34,8 +34,7 @@ item:
     date_start: '2022-06-01'
     organization: University of Michigan
     title: Dean’s honor list 
-  - certificate_url: https://www.datacamp.com
-    date_start: '2020-07-01'
+  - date_start: '2020-07-01'
     description: ''
     organization: Shanghai Jiao Tong University
     title: SJTU Undergraduate Excellence Scholarship
