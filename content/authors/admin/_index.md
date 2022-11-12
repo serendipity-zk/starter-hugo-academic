@@ -7,6 +7,8 @@ bio: I am applying for Fall 2023 PhD programs. My research interests are data
 interests:
   - Micro-architectual Optimization
   - Data Center Optimization
+  - Complier
+  - Operating System
 social:
   - icon: envelope
     icon_pack: fas
@@ -22,7 +24,7 @@ organizations:
     url: https://www.umich.edu/
 education:
   courses:
-    - course: B.S. Electical and Computer Engineering
+    - course: B.S. Computer Engineering
       institution: University of Michigan
       year: 2023
     - course: B.S. Electical and Computer Engineering

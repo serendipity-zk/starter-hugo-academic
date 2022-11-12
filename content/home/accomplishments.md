@@ -33,7 +33,7 @@ item:
   - date_end: ''
     date_start: '2022-06-01'
     organization: University of Michigan
-    title: Dean’s honor list 
+    title: Dean’s Honor List 
   - date_start: '2020-07-01'
     description: ''
     organization: Shanghai Jiao Tong University

@@ -21,7 +21,7 @@ feature:
     icon_pack: custom
     name: C/C++
   - description: Create custom hardware
-    icon: verilog
+    icon: chip
     icon_pack: custom
     name: Verilog
   - description: Formal Verification
@@ -32,6 +32,14 @@ feature:
     icon: python
     icon_pack: fab
     name: Python
+  - description: Version Control
+    icon: git
+    icon_pack: custom
+    name: Git
+  - description: Document Preparation
+    icon: latex
+    icon_pack: custom
+    name: Latex
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"
