@@ -31,20 +31,20 @@ education:
       institution: Shanghai Jiao Tong University
       year: 2021
 superuser: true
-last_name: Bighetti
+last_name: Zhu
 highlight_name: true
-first_name: Alice
+first_name: Kan
 email: kanzhu@umich.edu
 ---
 I am a senior undergraduate student majoring in Computer Engineering at the University of Michigan.
-My research interests are data center application optimizations and microarchitecture optimizations. I am also interested in Accelerators and Operating Systems.
+<!-- My research interests are data center application optimizations and microarchitecture optimizations. I am also interested in Accelerators, Compliers and Operating Systems. -->
 
 
 I lead the Enabling Architectural Simulations and Optimizations of Production Web Services Project, in which we proposed Ally, a novel simulation and characterization infrastructure that enables studying web services’ micro-architecture behaviors using Google applications, and identify the main bottleneck as thread oversubscription and low prefetch bandwidth usage.
 
+I present my work on MICRO 2022 and received ACM Student Research Competition 1st Place Award.
 
 I cooperate with professor Baris Kasikci, Akshitha Sriraman, Heiner Litz, and industrial folks Derek Bruening, Abhinav Sharma, Sangeeta Bhattacharya, and Victor Lee. 
 
 
-I present my work on MICRO 2022 and received ACM Student Research Competition 1st Place Award.
-I am applying for Fall 2023 Ph.D. programs. Please consider me if you are recruiting.
+**I am applying for Fall 2023 Ph.D. programs. Please consider me if you are recruiting**.
