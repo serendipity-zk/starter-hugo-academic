@@ -1,5 +1,5 @@
 ---
-slides: example
+# slides: example
 url_pdf: ""
 summary: We proposed and analyzed profile-guided, counter-based micro-op cache replacement policies.
 url_video: ""
@@ -7,7 +7,7 @@ date: 2022-10-20
 external_link: ""
 url_slides: ""
 title: Micro-op Cache Replacement Policy
-tags: []
+tags: [Research]
 links: []
 image:
   caption: Photo by rawpixel on Unsplash

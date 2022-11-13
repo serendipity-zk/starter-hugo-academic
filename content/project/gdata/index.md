@@ -1,5 +1,5 @@
 ---
-slides: example
+# slides: example
 url_pdf: ""
 summary: |2-
     * We proposed Ally, a novel simulation and characterization infrastructure that enables studying web services’ micro-architecture behaviors using Google applications
@@ -9,7 +9,7 @@ date: 2022-10-20
 external_link: ""
 url_slides: ""
 title: Enabling Architectural Simulations and Optimizations of Production Web Services
-tags: []
+tags: [Research]
 links: []
 image:
   caption: Photo by rawpixel on Unsplash
