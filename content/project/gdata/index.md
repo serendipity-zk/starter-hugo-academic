@@ -16,7 +16,7 @@ image:
   focal_point: Smart
 url_code: ""
 ---
-Modern web services are pervasive, running across hundreds
+<!-- Modern web services are pervasive, running across hundreds
 of thousands of servers in data centers. Hence, even
 a small improvement in server efficiency can achieve significant
 financial and environmental benefits. 
@@ -46,4 +46,4 @@ optimizations, we evaluate context-driven thread
 scheduling and bandwidth-aware hardware prefetching to
 eliminate 5% and 28% of cache misses faced by these services.
 Ally also motivates other future research directions,
-such as reducing the warm-up time for predictors and caches.
+such as reducing the warm-up time for predictors and caches. -->
