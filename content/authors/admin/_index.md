@@ -40,7 +40,7 @@ highlight_name: true
 first_name: Kan
 email: kanzhu@umich.edu
 ---
-I am a senior undergraduate student majoring in Computer Engineering at the University of Michigan. {{% staticref "uploads/KanZhuResumev2.docx" "newtab" %}}Download my CV{{% /staticref %}}
+I am a senior undergraduate student majoring in Computer Engineering at the University of Michigan. 
 <!-- My research interests are data center application optimizations and microarchitecture optimizations. I am also interested in Accelerators, Compliers and Operating Systems. -->
 
 
@@ -53,3 +53,5 @@ I am advised by [Tanvir Ahmed Khan](https://web.eecs.umich.edu/~takh/) and [Bari
 Recently, I presented my research to ACM student research competition at MICRO'2022 where I won [first place](https://twitter.com/takhandipu/status/1577813886312620032).
 
 **I am applying for Fall 2023 Ph.D. programs. If you are hiring, please reach out to me at kanzhu@umich.edu.**.
+
+{{% staticref "uploads/KanZhuResumev2.docx" "newtab" %}}Download my CV{{% /staticref %}}
