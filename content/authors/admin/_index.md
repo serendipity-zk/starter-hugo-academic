@@ -11,6 +11,9 @@ interests:
   - Hardware Security
   - Compiler
 social:
+  - icon: cv
+    icon_pack: ai
+    link: {{% staticref "uploads/cv.pdf" "newtab" %}}Download my CV{{% /staticref %}}
   - icon: envelope
     icon_pack: fas
     link: kanzhu@umich.edu
