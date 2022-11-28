@@ -13,10 +13,10 @@ interests:
 social:
   - icon: cv
     icon_pack: ai
-    link: {{% staticref "uploads/cv.pdf" "newtab" %}}Download my CV{{% /staticref %}}
+    link: uploads/KanZhuResumev2.docx
   - icon: envelope
     icon_pack: fas
-    link: kanzhu@umich.edu
+    link: mailto:kanzhu@umich.edu
   - icon: github
     icon_pack: fab
     link: https://github.com/serendipity-zk
