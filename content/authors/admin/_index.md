@@ -3,12 +3,13 @@ title: Kan Zhu 朱侃
 role: Undergraduate (Computer Engineering)
 avatar_filename: avatar.jpg
 bio: I am applying for Fall 2023 PhD programs. My research interests are data
-  center application optimizations, micro-architechture optimizations
+  center application optimizations, micro-architectural optimizations
 interests:
-  - Micro-architectual Optimization
+  - Computer Architecture
   - Data Center Optimization
-  - Complier
   - Operating System
+  - Hardware Security
+  - Compiler
 social:
   - icon: envelope
     icon_pack: fas
@@ -26,10 +27,10 @@ education:
   courses:
     - course: B.S. Computer Engineering
       institution: University of Michigan
-      year: 2023
-    - course: B.S. Electical and Computer Engineering
+      year: 2021-2023
+    - course: B.S. Electrical and Computer Engineering
       institution: Shanghai Jiao Tong University
-      year: 2021
+      year: 2019-2021
 superuser: true
 last_name: Zhu
 highlight_name: true
@@ -40,11 +41,11 @@ I am a senior undergraduate student majoring in Computer Engineering at the Univ
 <!-- My research interests are data center application optimizations and microarchitecture optimizations. I am also interested in Accelerators, Compliers and Operating Systems. -->
 
 
-I lead the Enabling Architectural Simulations and Optimizations of Production Web Services Project, in which we proposed Ally, a novel simulation and characterization infrastructure that enables studying web services’ micro-architecture behaviors using Google applications, and identify the main bottleneck as thread oversubscription and low prefetch bandwidth usage.
+My research enables architectural simulations, characterizations, and optimizations of production web services. In particular, I propose a novel infrastructure to investigate and optimize production web services' micro-architectural behaviors using recently-released Google traces. I have also worked on optimizing the performance of uop cache for data center applications.
 
-I present my work on MICRO 2022 and received ACM Student Research Competition 1st Place Award.
+I presented my work on MICRO 2022 and received ACM Student Research Competitions 1st Place Award.
 
-I cooperate with professor Baris Kasikci, Akshitha Sriraman, Heiner Litz, and industrial folks Derek Bruening, Abhinav Sharma, Sangeeta Bhattacharya, and Victor Lee. 
+I am advised by Tanvir Ahmed Khan and Baris Kasikci. I also collaborate with Shuwen Deng, Heiner Litz, and Akshitha Sriraman. I have also closely worked with Google engineers, Derek Bruening and Victor Lee.
 
-
-**I am applying for Fall 2023 Ph.D. programs. Please consider me if you are recruiting**.
+Recently, I presented my research to ACM student research competition at MICRO'2022 where I won [first place](https://twitter.com/takhandipu/status/1577813886312620032).
+**I am applying for Fall 2023 Ph.D. programs. If you are hiring, please reach out to me at kanzhu@umich.edu.**.
