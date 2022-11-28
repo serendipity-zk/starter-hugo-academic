@@ -37,7 +37,7 @@ highlight_name: true
 first_name: Kan
 email: kanzhu@umich.edu
 ---
-I am a senior undergraduate student majoring in Computer Engineering at the University of Michigan.
+I am a senior undergraduate student majoring in Computer Engineering at the University of Michigan. {{% staticref "uploads/KanZhuResumev2.docx" "newtab" %}}Download my CV{{% /staticref %}}
 <!-- My research interests are data center application optimizations and microarchitecture optimizations. I am also interested in Accelerators, Compliers and Operating Systems. -->
 
 
