@@ -29,7 +29,9 @@ publication_types: ['1']
 publication: In Submission to *ASPLOS*
 publication_short: In Submission to *ASPLOS*
 
+
 abstract: As data centers provide more and more value to life, low efficiency and energy consumption of data center applications have become worldwide concerns. To address this concern,we comprehensively characterize micro-architectural implications of data center applications using newly released Google traces. We study the impact of thread switching, measure cache performance, and evaluate state-of-the-art optimization techniques to provide insights for optimizing data center ap-plications. We also investigate the similarity and diversity among traces and compare them with open-source widely-used applications to create a small representative subset that will facilitate future micro-architectural research. We will open-source the artifacts of this research
+
 
 # Summary. An optional shortened abstract.
 summary: |2-
