@@ -2,7 +2,7 @@
 # slides: example
 url_pdf: ""
 summary: |2-
-    * We proposed Ally, a novel simulation and characterization infrastructure that enables studying web services’ micro-architecture behaviors using Google applications
+    * We proposed a simulation and characterization infrastructure that enables studying web services’ micro-architecture behaviors using Google applications
     * We identify the main bottleneck as thread oversubscription and low prefetch bandwidth usage.
 url_video: ""
 date: 2022-10-20

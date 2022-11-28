@@ -48,4 +48,5 @@ I presented my work on MICRO 2022 and received ACM Student Research Competitions
 I am advised by Tanvir Ahmed Khan and Baris Kasikci. I also collaborate with Shuwen Deng, Heiner Litz, and Akshitha Sriraman. I have also closely worked with Google engineers, Derek Bruening and Victor Lee.
 
 Recently, I presented my research to ACM student research competition at MICRO'2022 where I won [first place](https://twitter.com/takhandipu/status/1577813886312620032).
+
 **I am applying for Fall 2023 Ph.D. programs. If you are hiring, please reach out to me at kanzhu@umich.edu.**.

@@ -1,11 +1,12 @@
 ---
-title: 'Architectural Implications of Google’s Data Center Application (Paper Name omitted to maintain anonymity)'
+title: 'Optimizing micro-op cache for data center applications (Paper name omitted to maintain anonymity)'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Kan Zhu (Leading Author)
+  - ......
+  - Kan Zhu (Second Author)
   - ......
 
 # Author notes (optional)
@@ -23,21 +24,20 @@ doi: ''
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['0']
+publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: Peer-reviewed Poster. Paper in Submission to *ASPLOS*
-publication_short: Peer-reviewed Poster. Paper in Submission to *ASPLOS*
+publication: In Submission to *ISCA*
+publication_short: In Submission to *ISCA*
 
 
-abstract: As data centers provide more and more value to life, low efficiency and energy consumption of data center applications have become worldwide concerns. To address this concern,we comprehensively characterize micro-architectural implications of data center applications using newly released Google traces. We study the impact of thread switching, measure cache performance, and evaluate state-of-the-art optimization techniques to provide insights for optimizing data center ap-plications. We also investigate the similarity and diversity among traces and compare them with open-source widely-used applications to create a small representative subset that will facilitate future micro-architectural research. We will open-source the artifacts of this research
+abstract: 
 
 
 # Summary. An optional shortened abstract.
 summary: |2-
-    * **1st place winner at ACM Student Research Competition at MICRO'2022**
-    * We proposed a simulation and characterization infrastructure that enables studying web services’ micro-architecture behaviors using Google applications
-    * We identify the main bottleneck as thread oversubscription and low prefetch bandwidth usage
+    * Understand the limitations of state-of-the-art replacement policy and the uniqueness of micro-op cache.
+    * Proposed and evaluated counter-based, profile-guided replacement policy
 tags: []
 
 # Display this page in the Featured widget?
@@ -60,7 +60,7 @@ featured: true
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Data center'
+  caption: 'CPU'
   focal_point: ''
   preview_only: false
 
