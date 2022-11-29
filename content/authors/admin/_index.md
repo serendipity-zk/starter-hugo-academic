@@ -47,8 +47,9 @@ I am a senior undergraduate student majoring in Computer Engineering at the Univ
 
 My research enables architectural simulations, characterizations, and optimizations of production web services. In particular, I propose a novel infrastructure to investigate and optimize production web services' micro-architectural behaviors using recently-released Google traces. I have also worked on optimizing the performance of uop cache for data center applications.
 
+Recently, I presented my research to ACM student research competition at MICRO'2022 where I won [first place](https://twitter.com/takhandipu/status/1577813886312620032).
+
 I am advised by [Tanvir Ahmed Khan](https://web.eecs.umich.edu/~takh/) and [Baris Kasikci](https://web.eecs.umich.edu/~barisk/). I also collaborate with [Shuwen Deng](https://caslab.csl.yale.edu/~shuwen/), [Heiner Litz](https://people.ucsc.edu/~hlitz/), and [Akshitha Sriraman](https://akshithasriraman.eecs.umich.edu/). I have also closely worked with Google engineers, [Derek Bruening](https://research.google/people/author58045/) and [Victor Lee](https://www.linkedin.com/in/victor-lee-b980781/).
 
-Recently, I presented my research to ACM student research competition at MICRO'2022 where I won [first place](https://twitter.com/takhandipu/status/1577813886312620032).
 
 {{% staticref "uploads/KanZhuResumev2.docx" "newtab" %}}Download my CV{{% /staticref %}}
