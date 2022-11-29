@@ -33,7 +33,7 @@ education:
       year: 2021-2023
     - course: B.S. Electrical and Computer Engineering
       institution: Shanghai Jiao Tong University
-      year: 2019-2021
+      year: 2019-2021 (transfer to UM)
 superuser: true
 last_name: Zhu
 highlight_name: true
