@@ -1,24 +1,19 @@
 ---
-title: 'NanoFlow: Towards Optimal Large Language Model Serving Throughput'
+title: 'Atom: Low-bit Quantization for Efficient and Accurate LLM Serving'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Kan Zhu
   - Yilong Zhao
-  - Liangyu Zhao
-  - Gefei Zuo
-  - Yile Gu
-  - Dedong Xie
-  - Yufei Gao
-  - Qinyu Xu
-  - Tian Tang
-  - Zihao Ye
-  - Keisuke Kamahori
   - Chien-Yu Lin
-  - Stephanie Wang
+  - Kan Zhu
+  - Zihao Ye
+  - Lequn Chen
+  - Size Zheng
+  - Luis Ceze
   - Arvind Krishnamurthy
+  - Tianqi Chen
   - Baris Kasikci
 
 bold_author: "Kan Zhu"
@@ -30,7 +25,7 @@ bold_author: "Kan Zhu"
 
 date: '2024-10-20T00:00:00Z'
 doi: ''
-weight: 80
+weight: 82
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
 
@@ -45,15 +40,14 @@ publication: Arxiv 2024
 publication_short: Arxiv 2024
 
 abstract: |
-  The increasing usage of Large Language Models (LLMs) has resulted in a surging demand for planet-scale serving systems, where tens of thousands of GPUs continuously serve hundreds of millions of users. Consequently, throughput (under reasonable latency constraints) has emerged as a key metric that determines serving systems' performance. To boost throughput, various methods of inter-device parallelism (e.g., data, tensor, pipeline) have been explored. However, existing methods do not consider overlapping the utilization of different resources within a single device, leading to underutilization and sub-optimal performance.
-
-  We propose NanoFlow, a novel serving framework that exploits intra-device parallelism, which overlaps the usage of resources including compute, memory, and network within a single device through operation co-scheduling. To exploit intra-device parallelism, NanoFlow introduces two key innovations: First, NanoFlow splits requests into nano-batches at the granularity of operations, which breaks the dependency of sequential operations in LLM inference and enables overlapping; then, to get benefit from overlapping, NanoFlow uses an operation-level pipeline with execution unit scheduling, which partitions the device's functional units and simultaneously executes different operations in each unit. NanoFlow automates the pipeline setup using a parameter search algorithm, which enables easily porting NanoFlow to different models. We implement NanoFlow on NVIDIA GPUs and evaluate end-to-end serving throughput on several popular models such as LLaMA-2-70B, Mixtral 8x7B, LLaMA-3-8B, etc.. With practical workloads, NanoFlow provides 1.91x throughput boost compared to state-of-the-art serving systems achieving 59% to 72% of optimal throughput across ported models.
+  The growing demand for Large Language Models (LLMs) in applications such as content generation, intelligent chatbots, and sentiment analysis poses considerable challenges for LLM service providers. To efficiently use GPU resources and boost throughput, batching multiple requests has emerged as a popular paradigm; to further speed up batching, LLM quantization techniques reduce memory consumption and increase computing capacity. However, prevalent quantization schemes (e.g., 8-bit weight-activation quantization) cannot fully leverage the capabilities of modern GPUs, such as 4-bit integer operators, resulting in sub-optimal performance.
+  
+  To maximize LLMs' serving throughput, we introduce Atom, a low-bit quantization method that achieves high throughput improvements with negligible accuracy loss. Atom significantly boosts serving throughput by using low-bit operators and considerably reduces memory consumption via low-bit quantization. It attains high accuracy by applying a novel mixed-precision and fine-grained quantization process. We evaluate Atom on 4-bit weight-activation quantization in the serving context. Atom improves end-to-end throughput (token/s) by up to 7.7× compared to the FP16 and by 2.5× compared to INT8 quantization, while maintaining the same latency target.
 
 
 # Summary. An optional shortened abstract.
 summary: |2-
-    * Identified the underutilization of resources within a single device in existing serving systems due to sequentially executing operations with various resource requirements
-    * Overlapping the utilization of different resources within a single device through operation co-scheduling for higher resource utilization
+    * Use activation and weight low-bit quantization to improve throughput.
 tags: []
 
 # Display this page in the Featured widget?
@@ -64,8 +58,8 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2408.12757'
-url_code: 'https://github.com/efeslab/Nanoflow'
+url_pdf: 'https://arxiv.org/abs/2310.19102'
+url_code: 'https://github.com/efeslab/Atom'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_poster: ''
 # url_project: ''
@@ -78,6 +72,7 @@ url_code: 'https://github.com/efeslab/Nanoflow'
 image:
   focal_point: ''
   preview_only: false
+
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
