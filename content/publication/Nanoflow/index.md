@@ -1,20 +1,27 @@
 ---
-title: 'From Optimal to Practical: Efficient Micro-op Cache Replacement Policies for Data Center Applications'
+title: 'NanoFlow: Towards Optimal Large Language Model Serving Throughput'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - ......
-  - "**Kan Zhu**"
+  - Kan Zhu
   - Yilong Zhao
+  - Liangyu Zhao
+  - Gefei Zuo
+  - Yile Gu
+  - Dedong Xie
   - Yufei Gao
-  - Peter Braun
-  - Tanvir Ahmed Khan
-  - Heiner Litz
+  - Qinyu Xu
+  - Tian Tang
+  - Zihao Ye
+  - Keisuke Kamahori
+  - Chien-Yu Lin
+  - Stephanie Wang
+  - Arvind Krishnamurthy
   - Baris Kasikci
-  - Shuwen Deng
-  - ......
+
+bold_author: "Kan Zhu"
 
 # Author notes (optional)
 # author_notes:
@@ -34,22 +41,19 @@ doi: ''
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: International Symposium on High-Performance Computer Architecture (HPCA) 2025
-publication_short: HPCA 2025
-
+publication: Arxiv 2024
+publication_short: Arxiv 2024
 
 abstract: |
-  Optimizing the CPU frontend has become crucial for modern processors with intricate instruction decoding logic, especially for efficiently running planet-scale data center applications. Micro-operation (micro-op) cache is a key unit to help improve the energy efficiency of the CPU frontend. Unfortunately, we find that data center applications suffer from frequent micro-op cache misses due to the lack of an effective micro-op cache replacement policy. Developing micro-op cache-specific replacement policies is challenging, as there currently does not exist an optimal theoretical solution akin to Belady’s algorithm for conventional caches. As a result, it is unknown by how much replacement policies can be improved and how to get there.
+  The increasing usage of Large Language Models (LLMs) has resulted in a surging demand for planet-scale serving systems, where tens of thousands of GPUs continuously serve hundreds of millions of users. Consequently, throughput (under reasonable latency constraints) has emerged as a key metric that determines serving systems' performance. To boost throughput, various methods of inter-device parallelism (e.g., data, tensor, pipeline) have been explored. However, existing methods do not consider overlapping the utilization of different resources within a single device, leading to underutilization and sub-optimal performance.
 
-  To address these challenges, we introduce FLACK, a new near-optimal offline policy that considers the key features of the micro-op cache, such as variable and disproportional costs of micro-op cache misses and partial hits. We show that FLACK substantially outperforms Belady’s algorithm, thus establishing a new baseline for micro-op cache replacement policies. We then design FURBYS, a practical policy that mimics FLACK via profile-guided methods. FURBYS has three key components to perform cache replacement decisions: (1) it uses profiles of the whole-execution hit/miss behavior, (2) it detects locally (transiently) hot data, and (3) it selectively ignores data with profiled low hit rates.
-
-  We evaluate FLACK and FURBYS using 11 data center applications and find that FLACK demonstrates an average bound of 30.21% miss reduction, achieving 4.46% greater miss reduction than Belady’s algorithm. Our practical policy, FURBYS, provides 14.34% average miss reduction compared to LRU, which is 1.84× greater than the current state-of-the-art replacement policy, contributing to 3.10% of performance-per-watt improvement for the CPU core. On average, in terms of miss reduction and IPC gain, FURBYS is equivalent to LRU policy on 1.5× micro-op cache sizes (up to 2×), demonstrating the effectiveness of the proposed replacement policy.
+  We propose NanoFlow, a novel serving framework that exploits intra-device parallelism, which overlaps the usage of resources including compute, memory, and network within a single device through operation co-scheduling. To exploit intra-device parallelism, NanoFlow introduces two key innovations: First, NanoFlow splits requests into nano-batches at the granularity of operations, which breaks the dependency of sequential operations in LLM inference and enables overlapping; then, to get benefit from overlapping, NanoFlow uses an operation-level pipeline with execution unit scheduling, which partitions the device's functional units and simultaneously executes different operations in each unit. NanoFlow automates the pipeline setup using a parameter search algorithm, which enables easily porting NanoFlow to different models. We implement NanoFlow on NVIDIA GPUs and evaluate end-to-end serving throughput on several popular models such as LLaMA-2-70B, Mixtral 8x7B, LLaMA-3-8B, etc.. With practical workloads, NanoFlow provides 1.91x throughput boost compared to state-of-the-art serving systems achieving 59% to 72% of optimal throughput across ported models.
 
 
 # Summary. An optional shortened abstract.
 summary: |2-
-    * Understand the limitations of state-of-the-art replacement policy and the uniqueness of micro-op cache.
-    * Proposed and evaluated counter-based, profile-guided replacement policy
+    * Identified the underutilization of resources within a single device in existing serving systems due to sequentially executing operations with various resource requirements
+    * Overlapping the utilization of different resources within a single device through operation co-scheduling for higher resource utilization
 tags: []
 
 # Display this page in the Featured widget?
