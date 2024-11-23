@@ -24,15 +24,15 @@ organizations:
     url: https://www.washington.edu/
 education:
   courses:
-    - course: Ph.D. in Computer Science
+    - course: Ph.D. in Computer Science and Engineering
       institution: University of Washington
-      year: 2023-present
+      year: 2023 - Present
     - course: B.S. Computer Engineering
       institution: University of Michigan
-      year: 2021-2023
+      year: 2021 - 2023
     - course: B.S. Electrical and Computer Engineering
       institution: Shanghai Jiao Tong University
-      year: 2019-2021 (transfer to UM)
+      year: 2019 - 2021 (transfer to UM)
 superuser: true
 last_name: Zhu
 highlight_name: true
