@@ -64,8 +64,8 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-# url_pdf: ''
-# url_code: 'https://github.com/wowchemy/wowchemy-hugo-themes'
+url_pdf: 'https://arxiv.org/abs/2408.12757'
+url_code: 'https://github.com/efeslab/Nanoflow'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_poster: ''
 # url_project: ''
@@ -76,7 +76,7 @@ featured: false
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'CPU'
+  caption: 'Nanoflow'
   focal_point: ''
   preview_only: false
 
