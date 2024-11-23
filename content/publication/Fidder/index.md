@@ -1,19 +1,13 @@
 ---
-title: 'Atom: Low-bit Quantization for Efficient and Accurate LLM Serving'
+title: 'Fiddler: CPU-GPU Orchestration for Fast Inference of Mixture-of-Experts Models.'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Yilong Zhao
-  - Chien-Yu Lin
+  - Keisuke Kamahori
+  - Yile Gu
   - Kan Zhu
-  - Zihao Ye
-  - Lequn Chen
-  - Size Zheng
-  - Luis Ceze
-  - Arvind Krishnamurthy
-  - Tianqi Chen
   - Baris Kasikci
 
 bold_author: "Kan Zhu"
@@ -25,7 +19,7 @@ bold_author: "Kan Zhu"
 
 date: '2024-10-20T00:00:00Z'
 doi: ''
-weight: 82
+weight: 86
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
 
@@ -36,18 +30,16 @@ weight: 82
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: MLSys 2024
-publication_short: MLSys 2024
+publication: ICLR Workshop 2024
+publication_short: ICLR Workshop 2024
 
 abstract: |
-  The growing demand for Large Language Models (LLMs) in applications such as content generation, intelligent chatbots, and sentiment analysis poses considerable challenges for LLM service providers. To efficiently use GPU resources and boost throughput, batching multiple requests has emerged as a popular paradigm; to further speed up batching, LLM quantization techniques reduce memory consumption and increase computing capacity. However, prevalent quantization schemes (e.g., 8-bit weight-activation quantization) cannot fully leverage the capabilities of modern GPUs, such as 4-bit integer operators, resulting in sub-optimal performance.
-  
-  To maximize LLMs' serving throughput, we introduce Atom, a low-bit quantization method that achieves high throughput improvements with negligible accuracy loss. Atom significantly boosts serving throughput by using low-bit operators and considerably reduces memory consumption via low-bit quantization. It attains high accuracy by applying a novel mixed-precision and fine-grained quantization process. We evaluate Atom on 4-bit weight-activation quantization in the serving context. Atom improves end-to-end throughput (token/s) by up to 7.7× compared to the FP16 and by 2.5× compared to INT8 quantization, while maintaining the same latency target.
+  Large Language Models (LLMs) based on Mixture-of-Experts (MoE) architecture are showing promising performance on various tasks. However, running them on resource-constrained settings, where GPU memory resources are not abundant, is challenging due to huge model sizes. Existing systems that offload model weights to CPU memory suffer from the significant overhead of frequently moving data between CPU and GPU. In this paper, we propose Fiddler, a resource-efficient inference engine with CPU-GPU orchestration for MoE models. The key idea of Fiddler is to use the computation ability of the CPU to minimize the data movement between the CPU and GPU. Our evaluation shows that Fiddler can run the uncompressed Mixtral-8x7B model, which exceeds 90GB in parameters, to generate over 3 tokens per second on a single GPU with 24GB memory, showing an order of magnitude improvement over existing methods.
 
 
 # Summary. An optional shortened abstract.
 summary: |2-
-    * Use activation and weight low-bit quantization to improve throughput.
+    * We propose Fiddler, a resource-efficient inference engine with CPU-GPU orchestration for MoE models.
 tags: []
 
 # Display this page in the Featured widget?
@@ -58,8 +50,8 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2310.19102'
-url_code: 'https://github.com/efeslab/Atom'
+url_pdf: 'https://arxiv.org/abs/2402.07033'
+url_code: 'https://github.com/efeslab/fiddler'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_poster: ''
 # url_project: ''
