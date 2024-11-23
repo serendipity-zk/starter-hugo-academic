@@ -1,12 +1,19 @@
 ---
-title: 'Optimizing micro-op cache for data center applications (Paper name omitted to maintain anonymity)'
+title: 'From Optimal to Practical: Efficient Micro-op Cache Replacement Policies for Data Center Applications'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - ......
-  - Kan Zhu (Second Author)
+  - "**Kan Zhu**"
+  - Yilong Zhao
+  - Yufei Gao
+  - Peter Braun
+  - Tanvir Ahmed Khan
+  - Heiner Litz
+  - Baris Kasikci
+  - Shuwen Deng
   - ......
 
 # Author notes (optional)
