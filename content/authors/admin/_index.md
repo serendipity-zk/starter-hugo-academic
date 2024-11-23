@@ -1,22 +1,18 @@
 ---
 title: Kan Zhu 朱侃
-role: Undergraduate (Computer Engineering)
+role: PhD Student (Computer Science)
 avatar_filename: avatar.jpg
-bio: I am applying for Fall 2023 PhD programs. My research interests are data
-  center application optimizations, micro-architectural optimizations
+bio: I am Kan Zhu, a second year PhD student at University of Washington’s Paul G. Allen School of Computer Science and Engineering.
 interests:
+  - Machine Learning Systems
   - Computer Architecture
-  - Data Center Optimization
-  - Hardware Security
-  - Operating Systems
-  - Compilers
 social:
   - icon: cv
     icon_pack: ai
-    link: uploads/KanZhuResumev2.docx
+    link: uploads/KanZhuCV.pdf
   - icon: envelope
     icon_pack: fas
-    link: mailto:kanzhu@umich.edu
+    link: mailto:kanzhu@cs.washington.edu
   - icon: github
     icon_pack: fab
     link: https://github.com/serendipity-zk
@@ -24,10 +20,13 @@ social:
     icon_pack: fab
     link: https://www.linkedin.com/
 organizations:
-  - name: University of Michigan
-    url: https://www.umich.edu/
+  - name: University of Washington
+    url: https://www.washington.edu/
 education:
   courses:
+    - course: Ph.D. in Computer Science
+      institution: University of Washington
+      year: 2023-present
     - course: B.S. Computer Engineering
       institution: University of Michigan
       year: 2021-2023
@@ -38,18 +37,11 @@ superuser: true
 last_name: Zhu
 highlight_name: true
 first_name: Kan
-email: kanzhu@umich.edu
+email: kanzhu@cs.washington.edu
 ---
-**I am applying for Fall 2023 Ph.D. programs. If you are hiring, please reach out to me at kanzhu@umich.edu**.
+I am Kan Zhu, a second year PhD student at University of Washington’s Paul G. Allen School of Computer Science and
+Engineering, co-advised by [Baris Kasikci](https://homes.cs.washington.edu/~baris/) and [Arvind Krishnamurthy](https://www.cs.washington.edu/people/faculty/arvind).
 
-I am a senior undergraduate student majoring in Computer Engineering at the University of Michigan. 
-<!-- My research interests are data center application optimizations and microarchitecture optimizations. I am also interested in Accelerators, Compliers and Operating Systems. -->
+I develop systems and methodologies for optimizing Large Language Model (LLM) inference. The widespread adoption of LLMs presents unique challenges for on-device inference and cost-effective large-scale serving due to their substantial computational demands. To address these issues, I am interested in designing innovative hardware, algorithms, and frameworks tailored for both edge devices and data center environments.
 
-My research enables architectural simulations, characterizations, and optimizations of production web services. In particular, I propose a novel infrastructure to investigate and optimize production web services' micro-architectural behaviors using recently-released Google traces. I have also worked on optimizing the performance of uop cache for data center applications.
-
-Recently, I presented my research to ACM student research competition at MICRO'2022 where I won [first place](https://twitter.com/takhandipu/status/1577813886312620032).
-
-I am advised by [Tanvir Ahmed Khan](https://web.eecs.umich.edu/~takh/) and [Baris Kasikci](https://web.eecs.umich.edu/~barisk/). I also collaborate with [Shuwen Deng](https://caslab.csl.yale.edu/~shuwen/), [Heiner Litz](https://people.ucsc.edu/~hlitz/), and [Akshitha Sriraman](https://akshithasriraman.eecs.umich.edu/). I have also closely worked with Google engineers, [Derek Bruening](https://research.google/people/author58045/) and [Victor Lee](https://www.linkedin.com/in/victor-lee-b980781/).
-
-
-{{% staticref "uploads/KanZhuResumev2.docx" "newtab" %}}Download my CV{{% /staticref %}}
+{{% staticref "uploads/KanZhuCV.pdf" "newtab" %}}Download my CV{{% /staticref %}}
