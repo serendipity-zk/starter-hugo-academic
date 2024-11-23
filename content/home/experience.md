@@ -11,7 +11,7 @@ weight: 38
 
 title: Experience
 subtitle:
-
+active: false
 # Date format for experience
 #   Refer to https://wowchemy.com/docs/customization/#date-format
 date_format: Jan 2006
@@ -42,7 +42,6 @@ experience:
     description: |2-
       * GPA 3.83 / 4.00
       * Rank 11 / 300
-
 
 design:
   columns: '2'
