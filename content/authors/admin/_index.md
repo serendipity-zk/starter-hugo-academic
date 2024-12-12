@@ -39,7 +39,7 @@ highlight_name: true
 first_name: Kan
 email: kanzhu@cs.washington.edu
 ---
-I am Kan Zhu, a second year PhD student at University of Washington’s Paul G. Allen School of Computer Science and
+I am Kan Zhu, a second year PhD student at University of Washington's Paul G. Allen School of Computer Science and
 Engineering, co-advised by [Baris Kasikci](https://homes.cs.washington.edu/~baris/) and [Arvind Krishnamurthy](https://www.cs.washington.edu/people/faculty/arvind).
 
 I develop systems and methodologies for optimizing Large Language Model (LLM) inference. The widespread adoption of LLMs presents unique challenges for on-device inference and cost-effective large-scale serving due to their substantial computational demands. To address these issues, I am interested in designing innovative hardware, algorithms, and frameworks tailored for both edge devices and data center environments.
