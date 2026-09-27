@@ -5,6 +5,8 @@
 [build.environment]
   HUGO_VERSION = "0.97.3"
   HUGO_ENABLEGITINFO = "true"
+  # Node.js 16 is end-of-life on Netlify; the cache plugin below runs on Node.
+  NODE_VERSION = "22"
 
 [context.production.environment]
   HUGO_ENV = "production"
