@@ -7,7 +7,7 @@ title: 'Atom: Low-bit Quantization for Efficient and Accurate LLM Serving'
 authors:
   - Yilong Zhao
   - Chien-Yu Lin
-  - Kan Zhu
+  - admin
   - Zihao Ye
   - Lequn Chen
   - Size Zheng
@@ -23,7 +23,7 @@ bold_author: "Kan Zhu"
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2024-10-20T00:00:00Z'
+date: '2024-05-29T00:00:00Z'
 doi: ''
 weight: 82
 # Schedule page publish date (NOT publication's date).
@@ -51,7 +51,7 @@ summary: |2-
 tags: []
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 # Custom links (uncomment lines below)
 # links:

@@ -1,0 +1,33 @@
+{{/* Custom Experience block: a light timeline list instead of the theme's cards. */}}
+{{/* Based on wowchemy v5 blocks/experience.html. */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $columns := $block.Params.design.columns | default "2" }}
+{{ $date_format := $block.Params.date_format | default "January 2006" }}
+
+<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
+  {{ with $block.Content }}{{ . }}{{ end }}
+
+  {{ with $block.Params.experience }}
+  <ol class="xp-list">
+    {{ range . }}
+    <li class="xp-item">
+      <div class="xp-head">
+        <h3 class="xp-company">
+          {{- with .company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end}}{{ .company | markdownify | emojify }}{{with .company_url}}</a>{{end -}}
+        </h3>
+        <span class="xp-dates">
+          {{ (time .date_start) | time.Format $date_format }} –
+          {{ with .date_end }}{{ (time .) | time.Format $date_format }}{{ else }}{{ i18n "present" | default "Present" }}{{ end }}
+        </span>
+      </div>
+      <div class="xp-role">
+        {{ .title | markdownify | emojify }}{{ with .location }}, {{ . }}{{ end }}
+      </div>
+      {{ with .description }}<div class="xp-desc">{{ . | markdownify | emojify }}</div>{{ end }}
+    </li>
+    {{ end }}
+  </ol>
+  {{ end }}
+</div>

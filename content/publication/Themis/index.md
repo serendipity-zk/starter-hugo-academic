@@ -1,15 +1,26 @@
 ---
-title: 'Fiddler: CPU-GPU Orchestration for Fast Inference of Mixture-of-Experts Models'
+title: 'Themis: Software-Defined Hardware Prefetching'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Keisuke Kamahori
-  - Tian Tang
-  - Yile Gu
+  - Neil Adit
   - admin
+  - Yuqi Mai
+  - Victor Lee
+  - Heiner Litz
+  - Chris Kennelly
+  - Snehasish Kumar
+  - Hanna Alam
+  - Milad Hashemi
+  - David Li
+  - Adrian Sampson
   - Baris Kasikci
+  - Tipp Moseley
+  - Parthasarathy Ranganathan
+  - Akanksha Jain
 
 bold_author: "Kan Zhu"
 
@@ -18,9 +29,9 @@ bold_author: "Kan Zhu"
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2025-05-01T00:00:00Z'
+date: '2026-07-31T00:00:00Z'
 doi: ''
-weight: 86
+weight: 70
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
 
@@ -28,19 +39,15 @@ weight: 86
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['1']
+publication_types: ['3']
 
 # Publication name and optional abbreviated publication name.
-publication: ICLR 2025
-publication_short: ICLR 2025
+publication: arXiv 2026
+publication_short: arXiv 2026
 
 abstract: |
-  Large Language Models (LLMs) with the Mixture-of-Experts (MoE) architectures have shown promising performance on various tasks. However, due to the huge model sizes, running them in resource-constrained environments where the GPU memory is not abundant is challenging. Some existing systems propose to use CPU resources to solve that, but they either suffer from the significant overhead of frequently moving data between CPU and GPU, or fail to consider distinct characteristics of CPUs and GPUs. This paper proposes Fiddler, a resource-efficient inference system for MoE models with limited GPU resources. Fiddler strategically utilizes CPU and GPU resources by determining the optimal execution strategy. Our evaluation shows that, unlike state-of-the-art systems that optimize for specific scenarios such as single batch inference or long prefill, Fiddler performs better in all scenarios. Compared against different baselines, Fiddler achieves 1.26 times speed up in single batch inference, 1.30 times in long prefill processing, and 11.57 times in beam search inference. The code of Fiddler is publicly available at https://github.com/efeslab/fiddler.
+  Data cache misses represent a significant portion of stall cycles in datacenter workloads. Hardware prefetchers that reduce such stalls by fetching data ahead of time have become increasingly sophisticated. However, to achieve high coverage, they have to prefetch aggressively, generating many inaccurate accesses that waste memory bandwidth. This is problematic in datacenter environments where memory bandwidth is a limited resource due to high multi-tenancy. We observe that for datacenter workloads, inaccurate prefetches can be effectively filtered on a data page granularity, without sacrificing prefetch coverage. However, storing per-page metadata about prefetch usefulness in hardware is costly, so we propose a novel hardware-software interface for data prefetching: The software directs the hardware on where to prefetch, and the hardware identifies and issues prefetches in the regions of interest. We propose Themis, a profile-guided hardware prefetching solution that implements this new interface. Themis utilizes page-level hints stored in page-table entries to disable the prefetcher for certain data pages at runtime. Themis requires no binary or ISA changes and can be used to optimize processes without disrupting their execution. Themis is also orthogonal to existing works on prefetching and can be applied to optimize any hardware prefetcher. Our results show that Themis is able to achieve around 40% reduction in useless prefetch requests, resulting in speedup for all the evaluated prefetchers for datacenter workloads, including 4.1% for BOP, 3.1% for SPP+PPF, and 1.4% for Pythia.
 
-
-# Summary. An optional shortened abstract.
-summary: |2-
-    * We propose Fiddler, a resource-efficient inference engine with CPU-GPU orchestration for MoE models.
 tags: []
 
 # Display this page in the Featured widget?
@@ -51,14 +58,14 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2402.07033'
-url_code: 'https://github.com/efeslab/fiddler'
-# url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
+url_pdf: 'https://arxiv.org/abs/2608.00259'
+# url_code: ''
+# url_dataset: ''
 # url_poster: ''
 # url_project: ''
 # url_slides: ''
-# url_source: 'https://github.com/wowchemy/wowchemy-hugo-themes'
-# url_video: 'https://youtube.com'
+# url_source: ''
+# url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

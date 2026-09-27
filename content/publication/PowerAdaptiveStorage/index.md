@@ -1,16 +1,16 @@
 ---
-title: 'Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference'
+title: 'Can Storage Devices be Power Adaptive?'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Jiaming Tang
-  - Yilong Zhao
+  - Dedong Xie
+  - Theano Stavrinos
   - admin
-  - Guangxuan Xiao
+  - Simon Peter
   - Baris Kasikci
-  - Song Han
+  - Thomas E. Anderson
 
 bold_author: "Kan Zhu"
 
@@ -20,8 +20,8 @@ bold_author: "Kan Zhu"
 #   - 'Equal contribution'
 
 date: '2024-07-08T00:00:00Z'
-doi: ''
-weight: 81
+doi: '10.1145/3655038.3665945'
+weight: 87
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
 
@@ -32,35 +32,32 @@ weight: 81
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: ICML 2024
-publication_short: ICML 2024
+publication: HotStorage 2024
+publication_short: HotStorage 2024
 
 abstract: |
-  As the demand for long-context large language models (LLMs) increases, models with context windows of up to 128K or 1M tokens are becoming increasingly prevalent. However, long-context LLM inference is challenging since the inference speed decreases significantly as the sequence length grows. This slowdown is primarily caused by loading a large KV cache during self-attention. Previous works have shown that a small portion of critical tokens will dominate the attention outcomes. However, we observe the criticality of a token highly depends on the query. To this end, we propose Quest, a query-aware KV cache selection algorithm. Quest keeps track of the minimal and maximal Key values in KV cache pages and estimates the criticality of a given page using Query vectors. By only loading the Top-K critical KV cache pages for attention, Quest significantly speeds up self-attention without sacrificing accuracy. We show that Quest can achieve up to 2.23x self-attention speedup, which reduces inference latency by 7.03x while performing well on tasks with long dependencies with negligible accuracy loss. 
+  Power is becoming a scarce resource for data centers, raising the need for power adaptive system design---the ability to dynamically change power consumption---to match available power. Storage makes up an increasing fraction of total data center power consumption. As such, it holds great potential to contribute to data center power adaptivity.
 
+  To this end, we conduct a measurement study of power control mechanisms on a variety of modern data center storage devices. By changing device power states and shaping IO, we achieve a power dynamic range of up to 59.4% of the device's maximum operating power. We also study power control trade-offs, including throughput and latency. Based on our observations, we construct storage device power-throughput models and discuss the implications on power adaptive storage system design.
 
-# Summary. An optional shortened abstract.
-summary: |2-
-    * Identified the sparsity in the attention mechanism of long-context LLMs
-    * Dynamically choose critical tokens based on the query
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2406.10774'
-url_code: 'https://github.com/mit-han-lab/Quest'
-# url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
+url_pdf: 'https://dl.acm.org/doi/10.1145/3655038.3665945'
+# url_code: ''
+# url_dataset: ''
 # url_poster: ''
 # url_project: ''
 # url_slides: ''
-# url_source: 'https://github.com/wowchemy/wowchemy-hugo-themes'
-# url_video: 'https://youtube.com'
+# url_source: ''
+# url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

@@ -5,18 +5,19 @@ title: 'NanoFlow: Towards Optimal Large Language Model Serving Throughput'
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Kan Zhu
+  - admin
+  - Yufei Gao
   - Yilong Zhao
   - Liangyu Zhao
   - Gefei Zuo
   - Yile Gu
   - Dedong Xie
-  - Yufei Gao
-  - Qinyu Xu
   - Tian Tang
+  - Qinyu Xu
   - Zihao Ye
   - Keisuke Kamahori
   - Chien-Yu Lin
+  - Ziren Wang
   - Stephanie Wang
   - Arvind Krishnamurthy
   - Baris Kasikci
@@ -28,7 +29,7 @@ bold_author: "Kan Zhu"
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2024-10-20T00:00:00Z'
+date: '2025-07-07T00:00:00Z'
 doi: ''
 weight: 80
 # Schedule page publish date (NOT publication's date).
@@ -41,13 +42,13 @@ weight: 80
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: Arxiv 2024
-publication_short: Arxiv 2024
+publication: OSDI 2025
+publication_short: OSDI 2025
 
 abstract: |
-  The increasing usage of Large Language Models (LLMs) has resulted in a surging demand for planet-scale serving systems, where tens of thousands of GPUs continuously serve hundreds of millions of users. Consequently, throughput (under reasonable latency constraints) has emerged as a key metric that determines serving systems' performance. To boost throughput, various methods of inter-device parallelism (e.g., data, tensor, pipeline) have been explored. However, existing methods do not consider overlapping the utilization of different resources within a single device, leading to underutilization and sub-optimal performance.
+  Large Language Models (LLMs) have resulted in a surging demand for planet-scale serving systems, where tens of thousands of GPUs continuously serve hundreds of millions of users. Consequently, throughput has emerged as a key metric that determines serving systems' performance. Due to large model sizes and memory-intensive self-attention, LLM serving has been commonly assumed to be memory-bound. Through a detailed analysis, we show that despite having memory-intensive components, end-to-end LLM serving is compute bound for most common workloads and LLMs. Alas, most existing serving engines fall short from optimal compute utilization, because the heterogeneous operations that comprise LLM serving--compute, memory, networking--are executed sequentially within a device.
 
-  We propose NanoFlow, a novel serving framework that exploits intra-device parallelism, which overlaps the usage of resources including compute, memory, and network within a single device through operation co-scheduling. To exploit intra-device parallelism, NanoFlow introduces two key innovations: First, NanoFlow splits requests into nano-batches at the granularity of operations, which breaks the dependency of sequential operations in LLM inference and enables overlapping; then, to get benefit from overlapping, NanoFlow uses an operation-level pipeline with execution unit scheduling, which partitions the device's functional units and simultaneously executes different operations in each unit. NanoFlow automates the pipeline setup using a parameter search algorithm, which enables easily porting NanoFlow to different models. We implement NanoFlow on NVIDIA GPUs and evaluate end-to-end serving throughput on several popular models such as LLaMA-2-70B, Mixtral 8x7B, LLaMA-3-8B, etc.. With practical workloads, NanoFlow provides 1.91x throughput boost compared to state-of-the-art serving systems achieving 59% to 72% of optimal throughput across ported models.
+  We propose NanoFlow, a novel serving framework that exploits intra-device parallelism, which overlaps the usage of heterogeneous resources within a single device. NanoFlow splits inputs into smaller nano-batches and duplicates operations to operate on each portion independently, enabling overlapping. NanoFlow automatically identifies the number, size, ordering, and GPU resource allocation of nano-batches to minimize the execution time, while considering the interference of concurrent operations. We evaluate NanoFlow's end-to-end serving throughput on several popular models such as LLaMA-2-70B, Mixtral 8x7B, LLaMA-3-8B, etc. With practical workloads, NanoFlow provides 1.91x throughput boost compared to state-of-the-art serving systems achieving 50% to 72% of optimal throughput across popular models.
 
 
 # Summary. An optional shortened abstract.
@@ -57,7 +58,7 @@ summary: |2-
 tags: []
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 # Custom links (uncomment lines below)
 # links:

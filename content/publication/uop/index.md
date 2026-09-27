@@ -5,8 +5,7 @@ title: 'From Optimal to Practical: Efficient Micro-op Cache Replacement Policies
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - ......
-  - "**Kan Zhu**"
+  - admin
   - Yilong Zhao
   - Yufei Gao
   - Peter Braun
@@ -14,14 +13,15 @@ authors:
   - Heiner Litz
   - Baris Kasikci
   - Shuwen Deng
-  - ......
+
+bold_author: "Kan Zhu"
 
 # Author notes (optional)
-# author_notes:
-#   - 'Equal contribution'
-#   - 'Equal contribution'
+author_notes:
+  - 'Equal contribution'
+  - 'Equal contribution'
 
-date: '2024-10-20T00:00:00Z'
+date: '2025-03-01T00:00:00Z'
 doi: ''
 weight: 83
 # Schedule page publish date (NOT publication's date).
@@ -60,7 +60,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-# url_pdf: ''
+url_pdf: 'https://ieeexplore.ieee.org/abstract/document/10946783/'
 # url_code: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_poster: ''

@@ -1,0 +1,3 @@
+[submodule "KanZhuCV"]
+	path = KanZhuCV
+	url = https://github.com/serendipity-zk/KanZhuCV.git

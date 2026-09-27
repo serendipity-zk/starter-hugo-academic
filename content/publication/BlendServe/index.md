@@ -1,16 +1,19 @@
 ---
-title: 'Quest: Query-Aware Sparsity for Efficient Long-Context LLM Inference'
+title: 'BlendServe: Optimizing Offline Inference with Resource-aware Batching'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Jiaming Tang
   - Yilong Zhao
+  - Shuo Yang
   - admin
-  - Guangxuan Xiao
+  - Lianmin Zheng
   - Baris Kasikci
-  - Song Han
+  - Yifan Qiao
+  - Yang Zhou
+  - Jiarong Xing
+  - Ion Stoica
 
 bold_author: "Kan Zhu"
 
@@ -19,9 +22,9 @@ bold_author: "Kan Zhu"
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
-date: '2024-07-08T00:00:00Z'
-doi: ''
-weight: 81
+date: '2026-03-22T00:00:00Z'
+doi: '10.1145/3779212.3790133'
+weight: 76
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2017-01-01T00:00:00Z'
 
@@ -32,35 +35,32 @@ weight: 81
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: ICML 2024
-publication_short: ICML 2024
+publication: ASPLOS 2026
+publication_short: ASPLOS 2026
 
 abstract: |
-  As the demand for long-context large language models (LLMs) increases, models with context windows of up to 128K or 1M tokens are becoming increasingly prevalent. However, long-context LLM inference is challenging since the inference speed decreases significantly as the sequence length grows. This slowdown is primarily caused by loading a large KV cache during self-attention. Previous works have shown that a small portion of critical tokens will dominate the attention outcomes. However, we observe the criticality of a token highly depends on the query. To this end, we propose Quest, a query-aware KV cache selection algorithm. Quest keeps track of the minimal and maximal Key values in KV cache pages and estimates the criticality of a given page using Query vectors. By only loading the Top-K critical KV cache pages for attention, Quest significantly speeds up self-attention without sacrificing accuracy. We show that Quest can achieve up to 2.23x self-attention speedup, which reduces inference latency by 7.03x while performing well on tasks with long dependencies with negligible accuracy loss. 
+  Offline batch inference is gaining popularity as a cost-effective solution for latency-insensitive tasks, such as model evaluation and data curation. As the latency objective is highly relaxed, maximizing throughput is the primary goal in offline inference. Previous studies focused solely on throughput optimization within a batch. However, the diverse resource demands (compute-intensive vs. memory-intensive) across a wide range of applications make these approaches less effective, as imbalanced resource demands between batches restrict optimization opportunities.
 
+  Our insight is to create batches with mixed compute- and memory-intensive requests through request reordering to maximize resource overlapping. However, such a request schedule can conflict with the schedule that maximizes prefix sharing, a widely-used performance optimization, causing suboptimal inference throughput. In this paper, we first build a performance model to analyze request resource demands. Based on it, we design BlendServe, which harmonizes both resource overlapping and prefix sharing to maximize throughput. BlendServe organizes all requests using a resource-aware prefix tree and proposes a dual scanning algorithm to obtain the request schedule. Our evaluation on various models and workloads shows that BlendServe can achieve up to 90% of the optimal throughput.
 
-# Summary. An optional shortened abstract.
-summary: |2-
-    * Identified the sparsity in the attention mechanism of long-context LLMs
-    * Dynamically choose critical tokens based on the query
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2406.10774'
-url_code: 'https://github.com/mit-han-lab/Quest'
-# url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
+url_pdf: 'https://arxiv.org/abs/2411.16102'
+# url_code: ''
+# url_dataset: ''
 # url_poster: ''
 # url_project: ''
 # url_slides: ''
-# url_source: 'https://github.com/wowchemy/wowchemy-hugo-themes'
-# url_video: 'https://youtube.com'
+# url_source: ''
+# url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

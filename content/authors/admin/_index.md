@@ -1,11 +1,14 @@
 ---
 title: Kan Zhu 朱侃
+linktitle: Kan Zhu
 role: PhD Student (Computer Science)
 avatar_filename: avatar.jpg
-bio: I am Kan Zhu, a second year PhD student at University of Washington’s Paul G. Allen School of Computer Science and Engineering.
+bio: I am Kan Zhu, a fourth year PhD student at University of Washington’s Paul G. Allen School of Computer Science and Engineering.
 interests:
-  - Machine Learning Systems
-  - Computer Architecture
+  - Agentic AI Systems
+  - LLM Inference Engines
+  - Sparse Attention & Quantization
+  - Scheduling for LLM Serving
 social:
   - icon: cv
     icon_pack: ai
@@ -16,9 +19,12 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/serendipity-zk
+  - icon: twitter
+    icon_pack: fab
+    link: https://x.com/KanZhu854772
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/kan-zhu-245980334/
 organizations:
   - name: University of Washington
     url: https://www.washington.edu/
@@ -39,9 +45,9 @@ highlight_name: true
 first_name: Kan
 email: kanzhu@cs.washington.edu
 ---
-I am Kan Zhu, a second year PhD student at University of Washington's Paul G. Allen School of Computer Science and
+I am Kan Zhu, a fourth year PhD student at University of Washington's Paul G. Allen School of Computer Science and
 Engineering, co-advised by [Baris Kasikci](https://homes.cs.washington.edu/~baris/) and [Arvind Krishnamurthy](https://www.cs.washington.edu/people/faculty/arvind).
 
-I develop systems and methodologies for optimizing Large Language Model (LLM) inference. The widespread adoption of LLMs presents unique challenges for on-device inference and cost-effective large-scale serving due to their substantial computational demands. To address these issues, I am interested in designing innovative hardware, algorithms, and frameworks tailored for both edge devices and data center environments.
+I build systems that make large language model (LLM) inference faster and cheaper. My work spans the inference stack: at the algorithm level, I reduce computation and memory traffic with sparse attention and low-bit quantization; at the engine level, I design serving systems and schedulers that make full use of GPU and CPU resources. I am now extending this work to agentic AI systems, whose multi-step, tool-using workloads change how inference engines should schedule requests and reuse computation.
 
 {{% staticref "uploads/KanZhuCV.pdf" "newtab" %}}Download my CV{{% /staticref %}}

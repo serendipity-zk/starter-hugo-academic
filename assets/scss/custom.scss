@@ -1,0 +1,155 @@
+// "Read more" link under each project in the Projects (showcase) section.
+.showcase-read-more {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+
+  i {
+    margin-left: 0.25rem;
+    transition: transform 0.15s ease-in-out;
+  }
+
+  &:hover i {
+    transform: translateX(4px);
+  }
+}
+
+// Experience section: a light timeline list (see layouts/partials/blocks/experience.html).
+.xp-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.75rem;
+  border-left: 1px solid #d9dde3;
+}
+
+.xp-item {
+  position: relative;
+  padding-bottom: 2rem;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  // Dot on the timeline, vertically aligned with the company name.
+  &::before {
+    content: '';
+    position: absolute;
+    left: calc(-1.75rem - 5px);
+    top: 0.6rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #1565c0;
+    box-shadow: 0 0 0 4px #fff;
+  }
+}
+
+.xp-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+.xp-company {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #212529;
+
+  a {
+    color: inherit;
+  }
+
+  a:hover,
+  a:focus {
+    color: #1565c0;
+  }
+}
+
+.xp-dates {
+  font-size: 0.95rem;
+  color: #6c757d;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.xp-role {
+  margin-top: 0.1rem;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.xp-desc {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  li + li {
+    margin-top: 0.25rem;
+  }
+}
+
+// Dark mode (Wowchemy toggles `body.dark`).
+.dark {
+  .xp-list {
+    border-left-color: #3a3f47;
+  }
+
+  .xp-item::before {
+    background: #64b5f6;
+    box-shadow: 0 0 0 4px #181818;
+  }
+
+  .xp-company {
+    color: #e9ecef;
+
+    a:hover,
+    a:focus {
+      color: #64b5f6;
+    }
+  }
+
+  .xp-dates,
+  .xp-role {
+    color: #a3a9b0;
+  }
+}
+
+// Featured Publications on the home page: larger title and author text.
+#featured .view-list-item {
+  margin-bottom: 1.6rem;
+
+  > a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+
+  .article-metadata {
+    margin-top: 0.3rem;
+    font-size: 1.02rem;
+    line-height: 1.55;
+    color: #495057;
+  }
+
+  .btn-links {
+    margin-top: 0.5rem;
+  }
+
+  .btn-sm {
+    font-size: 0.85rem;
+  }
+}
+
+.dark #featured .view-list-item .article-metadata {
+  color: #c3c9d0;
+}
